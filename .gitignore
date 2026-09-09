@@ -7,6 +7,8 @@ dist/
 **/dist/
 build/
 **/build/
+target/
+**/target/
 dist-ssr/
 **/dist-ssr/
 
@@ -50,6 +52,10 @@ lerna-debug.log*
 # OS and editor files
 .DS_Store
 .idea/
+.classpath
+.project
+.settings/
+**/.settings/
 .vscode/settings.json
 **/.vscode/settings.json
 *.suo

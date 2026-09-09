@@ -1,0 +1,18 @@
+server:
+  port: ${PORT:8000}
+
+spring:
+  application:
+    name: expense-ai-service
+  config:
+    import: optional:file:.env[.properties]
+  jackson:
+    default-property-inclusion: non_null
+
+app:
+  gemini:
+    api-key: ${GEMINI_API_KEY:}
+    model: ${GEMINI_MODEL:gemini-2.5-flash}
+    base-url: ${GEMINI_BASE_URL:https://generativelanguage.googleapis.com}
+    connect-timeout: ${GEMINI_CONNECT_TIMEOUT:5s}
+    read-timeout: ${GEMINI_READ_TIMEOUT:30s}

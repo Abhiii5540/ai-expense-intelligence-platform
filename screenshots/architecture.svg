@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="650" viewBox="0 0 1800 650" role="img" aria-labelledby="title description">
+  <title id="title">AI Expense Intelligence Platform system architecture</title>
+  <desc id="description">React frontend communicating with Spring Boot expense and AI services, PostgreSQL, and Gemini.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#9ca3af"/>
+    </marker>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#05060a" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <rect width="1800" height="650" fill="#101118"/>
+  <text x="70" y="65" fill="#f9fafb" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="34" font-weight="700">AI Expense Intelligence Platform</text>
+  <text x="70" y="100" fill="#9ca3af" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18">Java 21 and Spring Boot service architecture</text>
+
+  <g stroke="#9ca3af" stroke-width="3" fill="none" marker-end="url(#arrow)">
+    <path d="M 230 325 L 300 325"/>
+    <path d="M 560 325 L 650 325"/>
+    <path d="M 980 255 C 1025 255, 1025 190, 1070 190"/>
+    <path d="M 1370 190 L 1480 190"/>
+    <path d="M 980 395 C 1025 395, 1025 460, 1070 460"/>
+    <path d="M 1370 460 L 1480 460"/>
+  </g>
+
+  <g fill="#c4c7d0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" text-anchor="middle">
+    <text x="265" y="308">Browser</text>
+    <text x="605" y="308">JWT API</text>
+    <text x="1025" y="208">JPA</text>
+    <text x="1425" y="172">SQL</text>
+    <text x="1025" y="445">Expenses</text>
+    <text x="1425" y="442">Prompt</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="70" y="265" width="160" height="120" rx="8" fill="#191b24" stroke="#343744" stroke-width="2"/>
+    <rect x="70" y="265" width="160" height="8" rx="4" fill="#f59e0b"/>
+    <text x="150" y="320" fill="#f9fafb" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="21" font-weight="700" text-anchor="middle">User</text>
+    <text x="150" y="350" fill="#9ca3af" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" text-anchor="middle">Web browser</text>
+
+    <rect x="300" y="225" width="260" height="200" rx="8" fill="#191b24" stroke="#343744" stroke-width="2"/>
+    <rect x="300" y="225" width="260" height="8" rx="4" fill="#22d3ee"/>
+    <text x="430" y="282" fill="#f9fafb" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" text-anchor="middle">React Frontend</text>
+    <text x="430" y="316" fill="#a5f3fc" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" text-anchor="middle">Vite + React Router</text>
+    <text x="430" y="351" fill="#9ca3af" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" text-anchor="middle">Dashboard and expense UI</text>
+    <text x="430" y="378" fill="#9ca3af" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" text-anchor="middle">Axios + Recharts</text>
+
+    <rect x="650" y="185" width="330" height="280" rx="8" fill="#191b24" stroke="#343744" stroke-width="2"/>
+    <rect x="650" y="185" width="330" height="8" rx="4" fill="#65a30d"/>
+    <text x="815" y="245" fill="#f9fafb" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="23" font-weight="700" text-anchor="middle">Spring Boot Expense API</text>
+    <text x="815" y="281" fill="#bef264" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" text-anchor="middle">Java 21 + Spring Web</text>
+    <rect x="700" y="315" width="230" height="42" rx="6" fill="#252832" stroke="#464a58"/>
+    <text x="815" y="342" fill="#e5e7eb" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" text-anchor="middle">Spring Security + JWT</text>
+    <rect x="700" y="374" width="230" height="42" rx="6" fill="#252832" stroke="#464a58"/>
+    <text x="815" y="401" fill="#e5e7eb" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" text-anchor="middle">Validation + Error Handling</text>
+
+    <rect x="1070" y="100" width="300" height="180" rx="8" fill="#191b24" stroke="#343744" stroke-width="2"/>
+    <rect x="1070" y="100" width="300" height="8" rx="4" fill="#a78bfa"/>
+    <text x="1220" y="159" fill="#f9fafb" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" text-anchor="middle">Persistence Layer</text>
+    <text x="1220" y="196" fill="#ddd6fe" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" text-anchor="middle">Spring Data JPA + Hibernate</text>
+    <text x="1220" y="231" fill="#9ca3af" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" text-anchor="middle">Flyway migrations</text>
+
+    <rect x="1480" y="100" width="260" height="180" rx="8" fill="#191b24" stroke="#343744" stroke-width="2"/>
+    <rect x="1480" y="100" width="260" height="8" rx="4" fill="#38bdf8"/>
+    <text x="1610" y="162" fill="#f9fafb" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" text-anchor="middle">PostgreSQL</text>
+    <text x="1610" y="199" fill="#bae6fd" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" text-anchor="middle">Users + Expenses</text>
+    <text x="1610" y="234" fill="#9ca3af" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" text-anchor="middle">Persistent relational data</text>
+
+    <rect x="1070" y="370" width="300" height="180" rx="8" fill="#191b24" stroke="#343744" stroke-width="2"/>
+    <rect x="1070" y="370" width="300" height="8" rx="4" fill="#34d399"/>
+    <text x="1220" y="428" fill="#f9fafb" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" text-anchor="middle">Spring Boot AI Service</text>
+    <text x="1220" y="465" fill="#a7f3d0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" text-anchor="middle">Prompt + response orchestration</text>
+    <text x="1220" y="500" fill="#9ca3af" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" text-anchor="middle">Structured INR insights</text>
+
+    <rect x="1480" y="370" width="260" height="180" rx="8" fill="#191b24" stroke="#343744" stroke-width="2"/>
+    <rect x="1480" y="370" width="260" height="8" rx="4" fill="#fbbf24"/>
+    <text x="1610" y="433" fill="#f9fafb" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" text-anchor="middle">Gemini API</text>
+    <text x="1610" y="470" fill="#fde68a" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" text-anchor="middle">Generative AI provider</text>
+    <text x="1610" y="505" fill="#9ca3af" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" text-anchor="middle">3-5 concise insights</text>
+  </g>
+
+  <text x="70" y="615" fill="#6b7280" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14">Independent services communicate over HTTP; only the expense API accesses PostgreSQL.</text>
+</svg>
